@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .hidden-link {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome, Customer!</h1>
+    <p>
+        Thank you for coming to the tour today!
+    </p>
+    <p>
+        If you have enjoyed the tour, you can leave a review and mention my name (Jamba)
+        
+    </p>
+    <p>
+        Once you have read the information, click the link below to proceed.
+    </p>
+    <p class="hidden-link">
+        <a href="https://www.example.com" id="proceedLink">Proceed to Your Content</a>
+    </p>
+
+    <button onclick="showLink()">I have read the information</button>
+
+    <script>
+        function showLink() {
+            document.querySelector('.hidden-link').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
